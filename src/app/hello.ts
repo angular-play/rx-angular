@@ -45,7 +45,7 @@ module app {
             private rx: RxObj) {
 
                 function searchWikipedia(term: string) {
-                    var url = "http://en.wikipedia.org/w/api.php&callback=JSON_CALLBACK";
+                    var url = "http://en.wikipedia.org/w/api.php?&callback=JSON_CALLBACK";
                     var req = {
                         action: "opensearch",
                         search: term,
@@ -66,7 +66,43 @@ module app {
         }
     }
 
+    class ClickController2 {
+        static $inject = [
+            "$scope",
+            "$http",
+            "rx"
+        ];
+        constructor(
+            private scope: IClickScope,
+            private http: ng.IHttpService,
+            private rx: RxObj) {
+                this.init();
+             }
+
+        searchWikipedia(term: string) {
+            var url = "http://en.wikipedia.org/w/api.php?&callback=JSON_CALLBACK";
+            var req = {
+                    action: "opensearch",
+                    search: term,
+                    format: "json"
+            };
+            var promise = this.http.jsonp(url, req);
+            return this.rx.Observable.fromPromise(promise).map( res => {
+                return res.data[1];
+            });
+        }
+
+        init() {
+            this.scope.$createObservableFunction("click")
+                        .map(() => this.scope.search)
+                        .flatMapLatest(this.searchWikipedia)
+                        .subscribe( (rs) => {
+                            this.scope.results = rs;
+                        });
+                }
+    }
+
     angular.module("app", ["rx"])
-        .controller("ClickController", ClickConroller)
+        .controller("ClickController", ClickController2)
         .controller("HelloController", HelloController);
 }
