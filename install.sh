@@ -1,0 +1,2 @@
+
+fsharpi fget.fsx $@

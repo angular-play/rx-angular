@@ -1,0 +1,42 @@
+{
+    "compilerOptions": {
+        "removeComments": true,
+        "outDir": "dist/Scripts/app"
+    },
+    "filesGlob": [
+        "src/**/*.ts",
+        "packages/**/*.d.ts",
+        "typings/**/*.d.ts"
+    ],
+    "files": [
+        "src/app/hello.ts",
+        "packages/angularjs.TypeScript.DefinitelyTyped.4.2.2/Content/Scripts/typings/angularjs/angular-animate.d.ts",
+        "packages/angularjs.TypeScript.DefinitelyTyped.4.2.2/Content/Scripts/typings/angularjs/angular-cookies.d.ts",
+        "packages/angularjs.TypeScript.DefinitelyTyped.4.2.2/Content/Scripts/typings/angularjs/angular-mocks.d.ts",
+        "packages/angularjs.TypeScript.DefinitelyTyped.4.2.2/Content/Scripts/typings/angularjs/angular-resource.d.ts",
+        "packages/angularjs.TypeScript.DefinitelyTyped.4.2.2/Content/Scripts/typings/angularjs/angular-route.d.ts",
+        "packages/angularjs.TypeScript.DefinitelyTyped.4.2.2/Content/Scripts/typings/angularjs/angular-sanitize.d.ts",
+        "packages/angularjs.TypeScript.DefinitelyTyped.4.2.2/Content/Scripts/typings/angularjs/angular.d.ts",
+        "packages/jquery.TypeScript.DefinitelyTyped.0.0.1/Content/Scripts/typings/jquery/jquery.d.ts",
+        "packages/rx-angular.TypeScript.DefinitelyTyped.0.0.3/Content/Scripts/typings/rx-angular/rx.angular.d.ts",
+        "packages/rx.js.TypeScript.DefinitelyTyped.0.4.0/Content/Scripts/typings/rx.js/rx-lite.d.ts",
+        "packages/rx.js.TypeScript.DefinitelyTyped.0.4.0/Content/Scripts/typings/rx.js/rx.aggregates.d.ts",
+        "packages/rx.js.TypeScript.DefinitelyTyped.0.4.0/Content/Scripts/typings/rx.js/rx.async-lite.d.ts",
+        "packages/rx.js.TypeScript.DefinitelyTyped.0.4.0/Content/Scripts/typings/rx.js/rx.async.d.ts",
+        "packages/rx.js.TypeScript.DefinitelyTyped.0.4.0/Content/Scripts/typings/rx.js/rx.backpressure-lite.d.ts",
+        "packages/rx.js.TypeScript.DefinitelyTyped.0.4.0/Content/Scripts/typings/rx.js/rx.backpressure.d.ts",
+        "packages/rx.js.TypeScript.DefinitelyTyped.0.4.0/Content/Scripts/typings/rx.js/rx.binding-lite.d.ts",
+        "packages/rx.js.TypeScript.DefinitelyTyped.0.4.0/Content/Scripts/typings/rx.js/rx.binding.d.ts",
+        "packages/rx.js.TypeScript.DefinitelyTyped.0.4.0/Content/Scripts/typings/rx.js/rx.coincidence-lite.d.ts",
+        "packages/rx.js.TypeScript.DefinitelyTyped.0.4.0/Content/Scripts/typings/rx.js/rx.coincidence.d.ts",
+        "packages/rx.js.TypeScript.DefinitelyTyped.0.4.0/Content/Scripts/typings/rx.js/rx.d.ts",
+        "packages/rx.js.TypeScript.DefinitelyTyped.0.4.0/Content/Scripts/typings/rx.js/rx.experimental.d.ts",
+        "packages/rx.js.TypeScript.DefinitelyTyped.0.4.0/Content/Scripts/typings/rx.js/rx.joinpatterns.d.ts",
+        "packages/rx.js.TypeScript.DefinitelyTyped.0.4.0/Content/Scripts/typings/rx.js/rx.jquery.d.ts",
+        "packages/rx.js.TypeScript.DefinitelyTyped.0.4.0/Content/Scripts/typings/rx.js/rx.lite.d.ts",
+        "packages/rx.js.TypeScript.DefinitelyTyped.0.4.0/Content/Scripts/typings/rx.js/rx.testing.d.ts",
+        "packages/rx.js.TypeScript.DefinitelyTyped.0.4.0/Content/Scripts/typings/rx.js/rx.time-lite.d.ts",
+        "packages/rx.js.TypeScript.DefinitelyTyped.0.4.0/Content/Scripts/typings/rx.js/rx.time.d.ts",
+        "packages/rx.js.TypeScript.DefinitelyTyped.0.4.0/Content/Scripts/typings/rx.js/rx.virtualtime.d.ts"
+    ]
+}
