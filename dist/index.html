@@ -1,17 +1,35 @@
 <!DOCTYPE html>
 
 <html>
-    <head></head>
+    <head>
+        <style>
+            div {
+                width: 100%;
+                background-color: lightgrey;
+                margin: 20px;
+            }
+        </style>
+    </head>
     <body>
 
-        <div ng-app="app" ng-controller="HelloController">
+        <section ng-app="app" >
+            <div ng-controller="HelloController">
+                <input type="text" ng-model="name">
+                <div>New: {{newValue}}</div>
+                <div>Old: {{oldValue}}</div>
+            </div>
 
-            <input type="text" ng-model="name">
+            <div ng-controller="ClickController">
+                <input type="text" ng-model="search">
+                <button ng-click="click()">Search</button>
+                <ul>
+                    <li ng-repeat="result in results">
+                        {{result}}
+                    </li>
+                </ul>
+            </div>
 
-            <div>New: {{newValue}}</div>
-            <div>Old: {{oldValue}}</div>
-
-        </div>
+        </section>
 
         <script src="scripts/library/angular.js"></script>
         <script src="scripts//rx.all.js"></script>
